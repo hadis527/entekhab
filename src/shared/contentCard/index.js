@@ -2,8 +2,10 @@ import React from "react";
 import { ContentCardWrapper, CoverContainer, ContentTitle, ContentCardContainer} from "./styles";
 import Row from "../../Kit/Row";
 import StatementHandler from "../../utils/methods/StatementHandler"
+import {  Link  } from "react-router-dom";
+
 const ContentCard = (props) => {
-    const { name, status, source } = props;
+    const { name, status, source, id } = props;
     return (
         <ContentCardWrapper>
             <ContentCardContainer>

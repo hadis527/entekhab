@@ -20,10 +20,10 @@ background:#000;
 `;
 export const DashboardContainer = styled(Col)`
  height:100vh;
- width:480px;
+ width:90vw;
  background-color: ${(props) => props.theme.primary};
  position:relative;
- background: ${(props) => props.isOpen ? props.theme.lightGary : "#fff"};
+ background: ${(props) => props.theme.lightGary };
 
 `;
 export const HeaderDashboardContainer = styled(Col)`
@@ -31,7 +31,7 @@ export const HeaderDashboardContainer = styled(Col)`
   height: 78px;
   align-items: flex-start;
   background-color: ${(props) => props.theme.primary};
-  justify-content: flex-end; 
+  justify-content: center; 
 `;
 export const BodyDashboardContainer = styled(Row)`
   height: calc(100% - 78px);
@@ -41,22 +41,4 @@ export const BodyDashboardContainer = styled(Row)`
   width: 100%;
   flex-wrap: wrap;
 `;
-export const InfiniteScrollWrapper = styled(Row)`
-height: 100%;
-min-height: 100%;
-overflow-y: scroll;
 
-::-webkit-scrollbar {
-  overflow: hidden;
-  width: 1px;
-}
-.InfiniteScroll {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-}
-`;

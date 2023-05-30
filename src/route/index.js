@@ -1,22 +1,35 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "../pages/home";
+import About from "../pages/about"
 import routePaths from "./namespace";
+import Character from "../pages/character";
 
 const AppRoute = () => {
 
   return (
     <BrowserRouter>
-      <Switch>
+      <Routes>
         <Route
-          path={routePaths.characters}
+          path="/"
           exact
-          component={(props) =>
-            <Home {...props} />
+          element={<Home />
           }
         />
-      </Switch>
+          <Route
+          path="/about"
+          element={
+            <About/>
+          }
+        />
+        <Route
+          path="/characters/:id"
+          element={
+            <Character  />
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 };
