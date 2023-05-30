@@ -4,7 +4,7 @@ import Row from "../../Kit/Row";
 
 
 const ContentCard = (props) => {
-    const { name, status, source, id } = props;
+    const { name, status, source} = props;
     return (
         <ContentCardWrapper>
             <ContentCardContainer>

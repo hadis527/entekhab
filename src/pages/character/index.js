@@ -25,7 +25,6 @@ const Character = () => {
 
   if (loading) return <div className="loader"></div>;
   if (error) return <p>Error : {error.message}</p>;
-  console.log(data);
   return (
     <ContentCard
       id={data.character.id}
