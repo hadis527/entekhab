@@ -4,19 +4,15 @@ import Row from "../../Kit/Row";
 
 
 const ContentCard = (props) => {
-    const { name, status, source} = props;
+    const { name, coverWidth, source,coverHeight} = props;
     return (
-        <ContentCardWrapper>
+        <ContentCardWrapper coverWidth={coverWidth}>
             <ContentCardContainer>
             <CoverContainer
-                coverHeight={250}
+                coverHeight={coverHeight}
                 source={source}
-                coverWidth={100}
             />
             <ContentTitle>{name}</ContentTitle>
-            <Row>
-                <span className="rate-container">{status}</span>
-            </Row>
             </ContentCardContainer>
         </ContentCardWrapper>
     )

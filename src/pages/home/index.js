@@ -51,6 +51,8 @@ const Characters = () => {
                 name={each.name}
                 status={each.status}
                 source={each.image}
+                coverWidth={200}
+                coverHeight={240}
               />
 
           </Link>

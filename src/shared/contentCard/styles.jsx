@@ -3,7 +3,7 @@ import Col from "../../Kit/Column";
 import Row from "../../Kit/Row";
 
 export const ContentCardWrapper = styled(Row)`
-  width : 200px;
+  width: ${(props) => `${props.coverWidth}px` || "200px"};
   min-height:250px;
   padding:10px;
   .rate-container{
@@ -20,7 +20,7 @@ export const CoverContainer = styled(Row)`
   background-size: cover;
   background-repeat: no-repeat;
   height: ${(props) => `${props.coverHeight || 240}px`};
-  width: ${(props) => `${props.coverWidth}%` || "100%"};
+  width :100%;
   border-radius: ${(props) => props.theme.borderRadius};
   align-items: flex-start;
 
