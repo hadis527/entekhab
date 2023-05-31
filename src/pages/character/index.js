@@ -48,7 +48,7 @@ const Character = () => {
           <Row className="text-container">species : {data.character.species}</Row>
           <Row className="text-container">status : {data.character.status}</Row>
           <Row className="text-container">
-            type : {data.character.type !== "" ? data.character.type : "-"}
+            type : {data.character.type !== "" ? data.character.type : "none"}
           </Row>
         </Col>
       </CharacterContainer>
