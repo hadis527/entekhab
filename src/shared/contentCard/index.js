@@ -1,7 +1,6 @@
 import React from "react";
 import { ContentCardWrapper, CoverContainer, ContentTitle, ContentCardContainer} from "./styles";
-import Row from "../../Kit/Row";
-
+import PropTypes from 'prop-types';
 
 const ContentCard = (props) => {
     const { name, coverWidth, source,coverHeight} = props;
@@ -17,4 +16,10 @@ const ContentCard = (props) => {
         </ContentCardWrapper>
     )
 }
+ContentCard.propTypes = {
+    name: PropTypes.string,
+    coverWidth: PropTypes.number,
+    coverHeight:propTypes.number,
+    source: PropTypes.string,
+};
 export default ContentCard
