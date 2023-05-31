@@ -43,12 +43,12 @@ const Character = () => {
         <Col>
           <Row className="text-container">name : {data.character.name}</Row>
           <Row className="text-container">
-            created : {moment(data.character.created).format("jYYYY/jMM/jDD")}
+            created : {moment(data.character.created).format("YYYY/MM/DD")}
           </Row>
           <Row className="text-container">species : {data.character.species}</Row>
           <Row className="text-container">status : {data.character.status}</Row>
           <Row className="text-container">
-            type : {data.character.type !== "" ? data.character.type : "none"}
+            type : {data.character.type !== "" ? data.character.type : "unknown"}
           </Row>
         </Col>
       </CharacterContainer>
