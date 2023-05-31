@@ -5,13 +5,6 @@ import Col from "../../Kit/Column";
 
 export const DashboardWrapper = styled(Row)`
 background:#000;
-.sort-container{
-    width: 100%;
-    justify-content: space-between;
-    span{
-      padding: 0 20px;
-    }
-}
 .text-container{
   font-size: ${(props) => props.theme.fontSizeLg};
   weight: bold;
