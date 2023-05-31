@@ -19,7 +19,7 @@ const ContentCard = (props) => {
 ContentCard.propTypes = {
     name: PropTypes.string,
     coverWidth: PropTypes.number,
-    coverHeight:propTypes.number,
+    coverHeight:PropTypes.number,
     source: PropTypes.string,
 };
 export default ContentCard
